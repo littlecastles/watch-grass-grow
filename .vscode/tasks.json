@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "SDL2",
+      "command": "/usr/bin/g++",
+      "args": [
+        "-g", "src/WatchGrassGrow.cpp", "-o", "build/WatchGrassGrow.exe",
+        "-ID:/usr/include",
+        "-lSDL2main",
+        "-lSDL2",
+      ],
+      "options": {
+        "cwd": "/usr/bin"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
